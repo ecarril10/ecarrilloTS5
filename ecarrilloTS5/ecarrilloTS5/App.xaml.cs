@@ -8,10 +8,17 @@ namespace ecarrilloTS5
     {
         public App()
         {
+
             InitializeComponent();
 
-            MainPage = new NavigationPage( new MainPage());
+            MainPage = new NavigationPage(new MainPage());
+
         }
+
+        //Comentario
+
+
+        
 
         protected override void OnStart()
         {
