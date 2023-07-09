@@ -5,7 +5,6 @@
 
     <StackLayout>
         <Label Text="CONSUMO DE SERVICIO WEB" HorizontalTextAlignment="Center" FontSize="20"/>
-      
         <ListView x:Name="milista">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -22,8 +21,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
-        <Button x:Name="btnConsultar" Text="Consultar" Clicked="btnConsultar_Clicked" />
+        
 
     </StackLayout>
 </ContentPage>
+    

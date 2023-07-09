@@ -19,14 +19,19 @@ namespace ecarrilloTS5
         public MainPage()
         {
             InitializeComponent();
+            obtenerDatos();
+
+
         }
 
-        private async Task btnConsultar_ClickedAsync(object sender, EventArgs e)
+        private async void obtenerDatos()
         {
             var contenido = await cliente.GetStringAsync(Url);
             List<Equipo> listaPost = JsonConvert.DeserializeObject<List<Equipo>>(contenido);
             post = new ObservableCollection<Equipo>(listaPost);
             milista.ItemsSource = post;
+
         }
+       
     }
 }
