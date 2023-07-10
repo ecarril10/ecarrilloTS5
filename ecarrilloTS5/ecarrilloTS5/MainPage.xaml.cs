@@ -19,7 +19,7 @@ namespace ecarrilloTS5
         public MainPage()
         {
             InitializeComponent();
-            obtenerDatos();
+            //obtenerDatos();
 
 
         }
@@ -32,6 +32,13 @@ namespace ecarrilloTS5
             milista.ItemsSource = post;
 
         }
-       
+
+        private async void butListar_Clicked(object sender, EventArgs e)
+        {
+            var contenido = await cliente.GetStringAsync(Url);
+            List<Equipo> listaPost = JsonConvert.DeserializeObject<List<Equipo>>(contenido);
+            post = new ObservableCollection<Equipo>(listaPost);
+            milista.ItemsSource = post;
+        }
     }
 }

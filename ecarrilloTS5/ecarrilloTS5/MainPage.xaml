@@ -10,7 +10,7 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout>
-                            <Label x:Name="lblCodigo"  Text="{Binding codigo}" />
+                            <Label x:Name="lblCodigo"  Text="{Binding codigo}"/>
                             <Label x:Name="lblMarca" Text="{Binding marca}" />
                             <Label x:Name="lblModelo" Text="{Binding modelo}"/>
                             <Label x:Name="lblDescripcion" Text="{Binding descripcion}"/>
@@ -21,8 +21,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        
-
+        <Button x:Name="butListar" Text="Listar" Clicked="butListar_Clicked"/>
     </StackLayout>
 </ContentPage>
     
