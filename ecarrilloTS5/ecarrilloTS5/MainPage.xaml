@@ -22,6 +22,7 @@
             </ListView.ItemTemplate>
         </ListView>
         <Button x:Name="butListar" Text="Listar" Clicked="butListar_Clicked"/>
+hola
     </StackLayout>
 </ContentPage>
     
